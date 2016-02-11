@@ -12,6 +12,23 @@ Read this comic http://theoatmeal.com/comics/design_hell
 
 git clone https://github.com/abramhindle/CMPUT404-assignment-css-hell.git
 
+Part 1 Modifications to HTML
+============================
+mars_is_my_destination_by_frank_belknap_long.html 
+
+- Added <div class = ("titlepage" or "center") to certain sections of text
+- Added <p class = "reverse"> to certain sections of text
+
+dracula_by_bram_stoker.html
+
+- Same modifications as mars_is_my_destination_by_frank_belknap_long.html
+
+adventure_of_huckleberry_finn_by_mark_twain.thml
+
+- Delete (style="width:60%") from <div class="fig" >
+- Same modifications as previous html files
+
+
 License/Copyright
 =================
 

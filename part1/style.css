@@ -1,0 +1,149 @@
+/*
+	Copyright 2016 Sean Partridge 
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	     http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+
+	Zoom In Effect on Images was modified from Joshua Johnson
+	at http://stackoverflow.com/questions/15757036/creating-a-zoom-effect-on-an-image-on-hover-using-css
+
+	Paper.jpg was taken from LekLu
+	at http://www.leklu.my/?attachment_id=992
+*/
+
+
+/* General html css styling for webpage */
+html{
+	font-family: "Courier New", Courier, monospace;
+	margin: 5%;
+	border: 10px solid #D2691E; 
+	background: #2F4F4F;
+}
+
+/* Background Image for webpage */
+body{
+	background: url("paper.jpg") no-repeat center center fixed; 
+  	background-size: cover;
+}
+
+/*html css styling for paragraphs in titlepage*/
+div.titlepage p {
+	display: block;
+	font-weight: 100;
+	color: #272727;
+	text-indent: -1em;
+	margin-left: 50px;
+  	margin-right: 75px;
+
+}
+
+/*html css for non-centered paragraphs*/
+div.center p {
+	text-align: center;
+}
+
+
+/*Special indentication for cite resources */
+p.reverse{
+	display: block;
+	font-weight: 100;
+	color: #272727;
+	text-indent: -3em;
+	margin-left: 50px;
+  	margin-right: 75px;
+}
+
+/*Normal paragraph styling for story paragraphs*/
+p{
+	display: block;
+	text-align: justify;
+	font-weight: 100;
+	color: #272727;
+	text-indent: 1em;
+	margin-left: 50px;
+  	margin-right: 75px;
+
+}
+
+/*html css styling for images */
+img{
+	text-shadow: 15px 15px 15px #505050;
+	margin-top: 0px;
+	max-width: 500px;
+	display: block;
+    margin: 0 auto;
+	border: 5px solid #000;   
+   	-webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+
+   	
+}
+
+/*a zoom in effect for image
+  work really nicely for adventures for huckleberry finn
+*/
+img:hover{
+	display: block;
+    margin: 0 auto;
+	-webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+	
+}
+
+/* css for title header */
+h1{
+  letter-spacing: 2px;
+  text-shadow: 15px 15px 15px #505050;
+  text-align: center;
+}
+
+/* css for other headers */
+h2,h3,h4,h5,h6{
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+/*css styling for the introduction located at the top 
+  of story */
+pre{
+	font-size: small;
+	margin-left: 50px;
+	margin-right: 75px;
+}
+
+/* css for tabling */
+table{
+	margin-left:auto; 
+    margin-right:auto;
+   	border-spacing: 10px;
+   	border: 1px solid gray;
+}
+
+/* css for rows */
+td{
+	opacity: 0.4;
+	border-spacing: 10px;
+  	filter:alpha(opacity=40);
+}
+
+/*opacity effect for each row in table*/
+td:hover{
+	opacity: 1;
+  filter:alpha(opacity=100);
+}
+
